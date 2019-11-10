@@ -1,0 +1,18 @@
+<div class="searchbar">
+
+
+  <div class="input-group mb-2 mr-sm-2">
+
+    <input type="text" class="form-control" id="search-input" placeholder="Search">
+  </div>
+
+
+
+
+
+</div>
+<list [countries]="filteredCountries"></list>
+
+<div class="alert alert-danger" role="alert" [hidden]="!hasError">
+  <strong>oops!!</strong> {{error}}
+</div>

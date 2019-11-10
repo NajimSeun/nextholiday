@@ -1,0 +1,4 @@
+<ul class="list-group">
+        <li *ngFor="let country of countries" class="list-group-item "  [routerLink]="['/holiday/next',country.alpha2Code]"> <img  class="list-image" [src]="country.flag" (onclick)="countrySelected"> {{country.name}}</li>
+         
+      </ul>
